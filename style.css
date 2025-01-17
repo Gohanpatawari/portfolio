@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #1c1c1c;
+    color: aliceblue;
+    scroll-behavior: smooth;
+}
+
+#Home {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 1px solid #27e187;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.mypic {
+    height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resume {
+    margin-top: 1rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* width: 50px; */
+    text-decoration: none;
+    /* background-color: #27e187; */
+    border: 2px solid #27e187;
+    color: #27e187;
+
+}
+
+.resume:hover {
+    background-color: #27e187;
+    color: #1c1c1c;
+}
+
+.intro {
+    font-size: 3rem;
+}
+
+.intropara {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+span {
+    color: #27e187;
+}
+
+.navigation {
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+.navigation ul {
+    /* list-style: none; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* text-decoration: none; */
+}
+
+.navigation ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 3.5rem;
+    color: #27e187;
+    font-size: 1.2rem;
+}
+
+.navigation ul a:hover {
+    border-bottom: 1px solid #27e187;
+}
+
+#About {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abouthead {
+    margin-top: 2rem;
+    padding: 5px;
+}
+
+.aboutpara {
+    padding: 20px;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    width: 900px;
+    line-height: 30px;
+}
+
+.education {
+    margin-top: 2rem;
+    padding: 10px;
+
+}
+
+.education .eheading {
+    text-align: center;
+}
+
+.onepart {
+    margin-top: 1.5rem;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.onepart p {
+    font-size: 1.2rem;
+}
+
+.skill {
+    padding: 10px;
+    margin-top: 1.5rem;
+    line-height: 35px;
+}
+
+.skill h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill p {
+    font-size: 1.2rem;
+}
+
+.hobbies h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies p {
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+#Contact {
+    margin-top: 3rem;
+    padding: 20px;
+}
+
+#Contact h1 {
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.form-container {
+    /* width: 100%; */
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.formelement {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.formelement input {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #27e187;
+
+    padding: 10px 30px;
+    color: white;
+    font-size: 1rem;
+}
+
+.formelement textarea {
+    background-color: transparent;
+    border: 2px solid #27e187;
+    outline: none;
+    margin-right: 20px;
+    color: white;
+    padding: 10px;
+    width: 40%;
+    height: 300px;
+
+}
+
+
+
+.meassage {
+    position: relative;
+    bottom: 300px;
+    left: 80px;
+}
+
+
+
+.submit {
+    margin-top: 2rem;
+    padding: 10px 25px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #27e187;
+    color: #27e187;
+    font-size: 1rem;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #27e187;
+    color: white;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a {
+    font-size: 2rem;
+    color: #27e187;
+    margin: 10px;
+    transition: transform 0.4s ease;
+}
+
+.social-media a:hover {
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:769px) {
+    .intro {
+        font-size: 2rem;
+    }
+
+    .introduction {
+        margin-left: 1rem;
+        width: 90%;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mypic {
+        height: 300px;
+    }
+
+    .intropara {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    .abouthead {
+        margin-right: 2rem;
+        padding: 10px;
+    }
+
+    .aboutpara {
+        padding: 10px;
+        width: 600px;
+    }
+
+    .formelement textarea {
+        margin-right: 1rem;
+        width: 330px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .navigation {
+        padding: 5px;
+    }
+
+    .navigation ul {
+        justify-content: space-around;
+    }
+
+    .navigation ul a {
+        margin-right: 0rem;
+
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .introduction {
+        margin-left: 0;
+    }
+
+    .intro {
+        font-size: 1.5rem;
+    }
+
+    .intropara {
+        line-height: 1.5rem;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    .abouthead {
+        margin-right: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .aboutpara {
+        text-align: center;
+        font-size: 1rem;
+        width: 350px;
+    }
+
+    .mypic {
+        height: 240px;
+        background-position: right;
+
+    }
+
+    .onepart p {
+        font-size: 1rem;
+    }
+
+    .skill p {
+        font-size: 1rem;
+    }
+
+    .hobbies p {
+        font-size: 1rem;
+    }
+
+    .formelement textarea {
+
+        width: 195px;
+        height: 150px;
+    }
+
+    .form-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .meassage {
+        bottom: 130px;
+        left: -12px;
+    }
+
+    .formelement input {
+        padding: 5px 10px;
+    }
+
+    .formelement input::placeholder {
+        font-size: 1rem;
+    }
+
+    #meassage {
+        transform: translateX(3px);
+    }
+
+    .submit {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:376px) {
+    form {
+        width: 100%;
+    }
+
+    .navigation ul a {
+        font-size: 1rem;
+    }
+}
