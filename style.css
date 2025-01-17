@@ -203,7 +203,7 @@ span {
 
 form {
     padding: 10px;
-    width: 70%;
+    width: 80%;
     text-align: center;
     border: 1px solid gray;
 }
@@ -220,7 +220,7 @@ form {
     outline: none;
     border: 2px solid #27e187;
 
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: white;
     font-size: 1rem;
 }
@@ -232,7 +232,7 @@ form {
     margin-right: 20px;
     color: white;
     padding: 10px;
-    width: 40%;
+    width: 30%;
     height: 300px;
 
 }
