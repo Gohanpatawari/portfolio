@@ -237,7 +237,83 @@ form {
 
 }
 
+#Projects {
+    margin-top: 3rem;
+}
 
+.project_heading {
+    text-align: center;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.card {
+    padding: 10px;
+    flex-shrink: 0;
+    margin: 10px;
+    width: 360px;
+}
+
+.card img {
+    height: 200px;
+
+    width: 357px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.4s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: #27e187;
+}
+
+.card p {
+    margin-top: 1rem;
+    /* padding: 5px; */
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: none;
+    color: aqua;
+    width: 100%;
+    text-align: end;
+    /* margin-top: 100px; */
+}
+
+.slide::-webkit-scrollbar {
+    height: 7px;
+    /* width: 30%; */
+    /* Height for horizontal scrollbar */
+    background-color: #1c1c1c;
+    /* Track color */
+}
+
+.slide::-webkit-scrollbar-thumb {
+    background-color: #27e187;
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Rounded edges */
+}
+
+.slide::-webkit-scrollbar-thumb:hover {
+    background-color: #1e9e77;
+    /* Color on hover */
+}
 
 .meassage {
     position: relative;
@@ -335,7 +411,7 @@ form {
 
     .navigation ul a {
         margin-right: 0rem;
-
+        font-size: 1rem;
     }
 
     .image {
@@ -387,6 +463,10 @@ form {
         font-size: 1rem;
     }
 
+
+
+
+
     .formelement textarea {
 
         width: 195px;
@@ -418,6 +498,10 @@ form {
     .submit {
         margin-top: 1rem;
     }
+
+    .navigation ul a {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width:376px) {
@@ -425,7 +509,13 @@ form {
         width: 100%;
     }
 
-    .navigation ul a {
-        font-size: 1rem;
+    .card {
+        margin: 5px;
+        width: 300px;
+    }
+
+    .card img {
+        height: 170px;
+        width: 280px;
     }
 }
